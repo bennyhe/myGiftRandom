@@ -7,8 +7,8 @@
 <body>
 	<div id="result"></div>
 	<script>
-	var aName=new Array('a','b','c','d');
-	var aGift=new Array('1','2');
+	var aName=new Array('a','b','c','d');//This is a name list as Aarry.
+	var aGift=new Array('1','2');//This is a gift list as Aarry.
 	var nGiftLength=aGift.length;
 
 	function fnGetRandom(){
@@ -17,10 +17,10 @@
 		for(var i=0;i<nGiftLength;i++)
 		{
 			var nRandom=Math.ceil(Math.random()*aName.length);
-			//console.log(nRandom);
+			//console.log(nRandom); //debug
 			if(nRandom>=aName.length)
 			{
-				nRandom=aName.length-1
+				nRandom=aName.length-1;
 			}
 			else if(nRandom<=0){
 				nRandom=0;
@@ -33,7 +33,7 @@
 		return str;
 	}
 
-	document.getElementById('result').innerHTML=fnGetRandom();
+	document.getElementById('result').innerHTML=fnGetRandom();//Print the people of getting gift.
 	</script>
 </body>
 </html>
